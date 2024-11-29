@@ -1,0 +1,195 @@
+/* Resetando as margens e o preenchimento padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5131c527;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    flex-direction: column; /* Garante que os itens fiquem empilhados */
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 2.5em;
+    color: #5024bf;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo dos rótulos dos campos */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo dos campos de entrada de texto */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5024bf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #270a70;
+}
+
+/* Estilo da mensagem de erro */
+p {
+    color: rgb(53, 53, 53);
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo do link de login */
+a {
+    color: #8961ed;
+    text-decoration: none;
+    text-align: center; /* Garante que o link fique centralizado abaixo do formulário */
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a mensagem de erro */
+.erro {
+    color: #ff4d4d;  /* Vermelho claro para indicar erro */
+    background-color: #ffe6e6; /* Fundo suave para destacar a mensagem */
+    border: 1px solid #ff0000;  /* Borda vermelha */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-align: center; /* Centraliza a mensagem */
+    margin-top: 20px; /* Espaço acima da mensagem */
+    margin-bottom: 20px; /* Espaço abaixo da mensagem */
+}
+
+/* Estilo para a mensagem de sucesso */
+.sucesso {
+    color: #4CAF50; /* Verde para indicar sucesso */
+    background-color: #d4edda; /* Fundo verde claro */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*** INDEX ***********/
+
+/* Estilo da tabela */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #270a70;
+    color: white;
+}
+
+table td a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+.editar{
+    color: rgb(255, 183, 3);
+}
+.excluir{
+    color: #dc0505;
+}
+
+.cookie{
+    color: white;
+}
+
+.cookie-banner button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 20%;
+}
+.cookie-banner button:hover {
+    background-color: #ddd;
+}
+
+.logout {
+    position: absolute;
+    top: 10px;   /* Ajusta a distância do topo */
+    left: 10px;  /* Ajusta a distância da esquerda */
+    font-size: 16px;  /* Tamanho da fonte do texto */
+    color: #4e5f71;   /* Cor do link */
+    text-decoration: none;  /* Remove o sublinhado */
+    display: flex;  /* Utiliza o flexbox para alinhar o ícone e o texto */
+    align-items: center;  /* Alinha o ícone com o texto */
+}
+
+.logout i {
+    margin-right: 8px;  /* Espaço entre o ícone e o texto */
+    font-size: 18px;  /* Tamanho do ícone */
+}
+
+.logout:hover {
+    text-decoration: underline;  /* Adiciona sublinhado ao passar o mouse */
+}
